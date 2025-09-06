@@ -1,0 +1,67 @@
+
+
+/*Qui rendo tutto reponsivo */
+
+/* Hero section : 1100px*/
+@media (max-width: 1100px) {
+    .hero-title{
+        font-size: clamp(1.8rem,3vw,5em);
+    }
+    #hero{
+     margin-left: calc(4rem - ((1100px - 100vw) * 0.027));
+    }
+ 
+    .about-wrapper__image > img{
+        width: 300px;
+}
+}
+
+
+/* Hero section : 900px*/
+@media (max-width: 900px) {
+    #hero{
+       margin-left: calc(6rem - ((900px - 100vw) * 0.05));
+    }
+    .about-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }  
+    .about-wrapper__image > img{
+        width: 200px;
+}
+    .about-wrapper__info-text{
+    font-size: 1rem;
+}
+    .project-wrapper .row{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+    }
+    .row > p{
+    font-size: 1rem ;
+}
+}
+
+/* Hero section : 700px*/
+@media (max-width: 700px) {
+    #hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center ;
+    margin: 0;
+    }
+}
+
+@media (max-width: 450px) {
+    h1{
+        font-size: 35px;
+    }
+    .project-wrapper__image img{
+       height: 120px;
+       width: 100vw;
+   }
+}
